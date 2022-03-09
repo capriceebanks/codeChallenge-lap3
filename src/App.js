@@ -12,7 +12,7 @@ function App() {
             <div id="text-container" className="text-light">
                 <h3 aria-label="Form" id="Form">
                     {" "}
-                    Hi {username ? username : "user"}, your repositories are:
+                    Hi {username ? username : "user"}, your recent repositories are:
                 </h3>
                 <Repositories username={username} />
             </div>
