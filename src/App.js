@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { SearchUsername } from "./components";
+import { Repositories, SearchUsername } from "./components";
 
 function App() {
     const [username, setUsername] = useState("");
@@ -12,6 +12,7 @@ function App() {
                     {" "}
                     Hi {username ? username : "user"}, your repositories are:
                 </h3>
+                <Repositories username={username} />
             </div>
         </>
     );
