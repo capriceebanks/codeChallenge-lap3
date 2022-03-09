@@ -38,7 +38,7 @@ const Repositories = ({ username }) => {
     const repositories = Array.isArray(repos) && repos.map(repo => <RepoListing repo={repo} />);
 
     return (
-        <section className="user-repos text-success">
+        <section className="user-repos text-light">
             {user && <UserListing user={user} />}
             {repositories}
         </section>

@@ -13,8 +13,8 @@ const SearchUsername = ({ setUsername }) => {
     };
     return (
         <>
-            <div id="form-container" className="p-5 text-light">
-                <form onSubmit={handleFormSubmit}>
+            <div id="form-container" className="p-4 d-flex justify-content-center text-light">
+                <form className="column align-items-centre g-3" onSubmit={handleFormSubmit}>
                     <label id="form" htmlFor="username">GitHub Username: </label><br/>
                     <input type="text" id="username" name="username" placeholder="Enter username here" value={nameInput} onChange={handleInput} />
                     <input type="submit" id="submit" value="Submit" />
