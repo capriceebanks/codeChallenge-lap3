@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import { Repositories, SearchUsername } from "./components";
+import { Repositories, SearchUsername, NavBar } from "./components";
+import './App.css';
 
 function App() {
     const [username, setUsername] = useState("");
 
     return (
         <>
+            <NavBar />
             <SearchUsername setUsername={setUsername} />
             <div id="text-container">
                 <h3 aria-label="Form" id="Form">
