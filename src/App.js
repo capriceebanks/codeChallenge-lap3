@@ -1,13 +1,20 @@
-import React, { Component } from 'react';
+import React, { useState } from "react";
+import { SearchUsername } from "./components";
 
-class App extends Component {
-  render() {
+function App() {
+    const [username, setUsername] = useState("");
+
     return (
-      <main>
-        <h1>Hello World</h1>
-      </main>
+        <>
+            <SearchUsername setUsername={setUsername} />
+            <div id="text-container">
+                <h3 aria-label="Form" id="Form">
+                    {" "}
+                    Hi {username ? username : "user"}, your repositories are:
+                </h3>
+            </div>
+        </>
     );
-  }
 }
 
 export default App;
