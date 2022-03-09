@@ -9,7 +9,7 @@ function App() {
         <>
             <NavBar />
             <SearchUsername setUsername={setUsername} />
-            <div id="text-container">
+            <div id="text-container" className="text-light">
                 <h3 aria-label="Form" id="Form">
                     {" "}
                     Hi {username ? username : "user"}, your repositories are:

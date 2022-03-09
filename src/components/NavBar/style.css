@@ -1,16 +1,11 @@
 .logo {
-  height: 90px;
-  width: 90px;
-  background-color: lightpink;
+  height: 85px;
+  width: 85px;
   border-radius: 50%;
   /* border: solid black 2px; */
 }
 
 h1 {
   display: inline;
-  color: lightpink;
 }
 
-nav {
-  background-color: #24292f;
-}

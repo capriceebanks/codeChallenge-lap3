@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './style.css';
 
 const SearchUsername = ({ setUsername }) => {
     const [nameInput, setNameInput] = useState("");
@@ -12,9 +13,9 @@ const SearchUsername = ({ setUsername }) => {
     };
     return (
         <>
-            <div id="form-container">
+            <div id="form-container" className="p-5 text-light">
                 <form onSubmit={handleFormSubmit}>
-                    <label id="form" htmlFor="username">GitHub Username: </label>
+                    <label id="form" htmlFor="username">GitHub Username: </label><br/>
                     <input type="text" id="username" name="username" placeholder="Enter username here" value={nameInput} onChange={handleInput} />
                     <input type="submit" id="submit" value="Submit" />
                 </form>
