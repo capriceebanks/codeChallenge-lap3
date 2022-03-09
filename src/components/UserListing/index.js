@@ -2,10 +2,10 @@ import React from 'react';
 
 const UserListing = ({user}) => {
     return (
-        <section className="user text-light">
+        <section className="user">
             <div className="user-info">
-            <a href={user.html_url} target="_blank">
-                <h1>{user.login}</h1>
+            <a className='text-decoration-none text-light' href={user.html_url} target="_blank">
+                <h1>All Repos</h1>
             </a>
              
             </div>
