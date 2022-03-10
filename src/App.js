@@ -6,17 +6,17 @@ function App() {
     const [username, setUsername] = useState("");
 
     return (
-        <>
-            <NavBar />
-            <SearchUsername setUsername={setUsername} />
-            <div id="text-container" className="text-light">
-                <h3 aria-label="Form" id="Form">
-                    {" "}
-                    Hi {username ? username : "user"}, your recent repositories are:
-                </h3>
-                <Repositories username={username} />
-            </div>
-        </>
+    <>
+      <NavBar />
+        <SearchUsername setUsername={setUsername} />
+        <div id="text-container" className="text-light">
+          <h3 aria-label="Form" id="Form">
+            {" "}
+            Hi {username ? username : "user"}, your recent repositories are:
+          </h3>
+          <Repositories username={username} />
+        </div>
+    </>
     );
 }
 
