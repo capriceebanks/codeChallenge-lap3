@@ -3,7 +3,7 @@ import React from 'react';
 const RepoListing = ({ repo }) => {
     return (
       // <div className='row row-cols-1 row-cols-md-1 g-4'>
-      //   <div className='col'>
+        <div className='row'>
           <div className="repo card border-light bg-transparent w-80 mb-2">
             <div className="repo-info card-header border-light">
               <a className='text-decoration-none text-light' href={repo.html_url} target="_blank">
@@ -22,7 +22,7 @@ const RepoListing = ({ repo }) => {
               </div>
             </div>
           </div>
-      //   </div>
+        </div>
       // </div>
     )
 }
