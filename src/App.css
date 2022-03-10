@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  margin: 0
+}
+
+#text-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  flex-direction: column;
+}
+
+.search {
+  margin-top: 100px;
+}
+
+
+
